@@ -1,3 +1,4 @@
+var SERVER_PORT = 7000
 var express = require('express');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require("webpack-hot-middleware");
@@ -25,7 +26,7 @@ app.use(webpackHotMiddleware(compiler, {
   heartbeat: 10 * 1000,
 }));
 
-var server = app.listen(3000, function() {
+var server = app.listen(SERVER_PORT, function() {
   var host = server.address().address;
   var port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
