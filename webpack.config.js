@@ -40,6 +40,7 @@ var config = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    //following line copy src/static file to dist/static
     new CopyWebpackPlugin([{ from: 'static', to : 'static' } ])
   ],
 };

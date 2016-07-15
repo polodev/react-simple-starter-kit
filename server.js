@@ -7,13 +7,14 @@ var webpackConfig = require('./webpack.config.js');
 var app = express();
 
 var compiler = webpack(webpackConfig);
-
-app.use(express.static(__dirname + '/dist'));
+//actually this is the solution
+app.use('/', express.static(__dirname + '/'));
 
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
   filename: 'bundle.js',
-  publicPath: '/',
+  //plus this is the solution but I can't think about Image loading
+  publicPath: '/dist',
   stats: {
     colors: true,
   },
