@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import Routes from './router/index.js'
 
 ReactDOM.render(
-  React.createElement(Counter),
+  <div><Routes /></div>,
   document.getElementById('mount')
 );
