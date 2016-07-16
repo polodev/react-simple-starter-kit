@@ -7,7 +7,6 @@ Basic Starter kit for react es6 less
 npm install
 npm start
 open http://localhost:3000
-
 ```
 
 ## How to Start
@@ -27,10 +26,6 @@ npm run compile
 
 ```
 this npm command will prepare the production dist. Just deploy the dist folder thats it. This command also copied all static file
-
-### Important Things about static file in Development
-static folder should be copied to the dist folder.
-Easiest way to copy all static file from src folder to dist folder is "npm run compile". Then delete the bundle.js file from dist directory
 
 
 
