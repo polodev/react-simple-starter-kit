@@ -1,7 +1,12 @@
 # react-simple-starter-kit
 Basic Starter kit for react es6 less
 
-### Usage
+##Features
+* Hot module replacement
+* Less compile
+* React Router
+
+## Usage
 
 ```
 npm install
@@ -16,7 +21,7 @@ open http://localhost:3000
 1. Make a view file inside src/views/
 2. export the view file through src/views/index.js
 3. in router/index.js import that created view
-4. give a route path for this component
+4. give a route path for this view
 5. thats all for development
 
 ### File and Production Mode
