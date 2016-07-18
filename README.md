@@ -1,9 +1,10 @@
 # react-simple-starter-kit
-Basic Starter kit for react es6 less
+Basic Starter kit for react, es6, less or sass
 
 ##Features
-* Hot module replacement
-* Less compile
+* Hot Module Replacement
+* Less Compile
+* Sass Compile
 * React Router
 
 ## Usage
@@ -12,6 +13,12 @@ Basic Starter kit for react es6 less
 npm install
 npm start
 open http://localhost:3000
+```
+### Want to use Sass instead of Less
+In Master branch less compile is available. So if you want sass just do following
+```
+git checkout sass
+npm i
 ```
 
 ## How to Start
@@ -31,7 +38,6 @@ npm run compile
 
 ```
 this npm command will prepare the production dist. Just deploy the dist folder thats it. This command also copied all static file
-
 
 
 ### Dependencies
@@ -55,4 +61,3 @@ this npm command will prepare the production dist. Just deploy the dist folder t
 * webpack
 * webpack-dev-middleware
 * webpack-hot-middleware
-*
