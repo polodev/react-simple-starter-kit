@@ -12,7 +12,7 @@ Basic Starter kit for react, es6, less or sass
 ```
 npm install
 npm start
-open http://localhost:3000
+open http://localhost:7000
 ```
 ### Want to use Sass instead of Less
 In Master branch less compile is available. So if you want sass just do following
