@@ -6,7 +6,7 @@ var config = {
   context: path.join(__dirname, 'src'),
   entry: [
     'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-    './style/base.less',
+    './style/base.scss',
     './main.js',
   ],
   output: {
@@ -23,6 +23,11 @@ var config = {
       {
           test: /\.less$/,
           loaders: ['style', 'css', 'postcss-loader', 'less']
+       },
+
+      {
+          test: /\.scss$/,
+          loaders: ['style', 'css?sourceMap', 'postcss-loader', 'sass?sourceMap']
        }
     ],
   },
